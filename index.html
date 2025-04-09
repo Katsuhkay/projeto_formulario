@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda sua casa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Cadastre sua casa para coloca-la a venda</h2>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda sua casa sem dores de cabeça!</h1>
+                <p>
+                    Descreva as caracteristicas e os prós e contras da residencia a venda:
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <input required
+                        type="text" 
+                        name="title" 
+                        id="title" 
+                        class="block" 
+                        placeholder="Título do anúncio" 
+                        maxlength="30"
+                        minlength="1">
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço R$<span class="required-field">*</span></label>
+                        <input required
+                        type="number" 
+                        name="price" 
+                        id="price" 
+                        class="block" 
+                        placeholder="Valor do imóvel">
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição<span class="required-field">*</span></label>
+                        <textarea 
+                        name="description" 
+                        id="description" 
+                        class="block" 
+                        placeholder="Detalhes da casa para ser reformados, caso haja."></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="address">Endereço do imóvel<span class="required-field">*</span></label>
+                        <input required
+                        type="text" 
+                        name="address" 
+                        id="address" 
+                        class="block" 
+                        placeholder="Endereço do imóvel">
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Qual o estado do imóvel?<span class="required-field">*</span>
+                        </p>
+                        <div class="radio-group">
+                            <input required type="radio" name="condition" id="new" value="Novo">
+                            <label for="new">Novo</label>
+                            <input required type="radio" name="condition" id="used" value="Usado">
+                            <label for="used">Usado</label>
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Casa ou apartamento?<span class="required-field">*</span>
+                        </p>
+                        <div class="radio-group">
+                            <input required type="radio" name="house/apt" id="house" value="Casa">
+                            <label for="house">Casa</label>
+                            <input required type="radio" name="house/apt" id="apartment" value="Apartamento">
+                            <label for="apartment">Apartamento</label>
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Possui condomínio?<span class="required-field">*</span>
+                        </p>
+                        <div class="radio-group">
+                            <input required type="radio" name="condominium" id="condominiumyes" value="Casa">
+                            <label for="condominiumyes">Sim</label>
+                            <input required type="radio" name="condominium" id="condominiumno" value="Apartamento">
+                            <label for="condominiumno">Não</label>
+                    </div>
+                    <div class="box-input">
+                        <label for="condominium">No caso de sim, qual o valor mensal?</label>
+                        <input type="number" 
+                        name="condominium" 
+                        id="condominium" 
+                        class="block" 
+                        placeholder="Valor do condomínio">
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Possui piscina?<span class="required-field">*</span>
+                        </p>
+                        <div class="radio-group">
+                            <input required type="radio" name="pool" id="poolyes" value="Casa">
+                            <label for="poolyes">Sim</label>
+                            <input required type="radio" name="pool" id="poolno" value="Apartamento">
+                            <label for="poolno">Não</label>
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Possui garagem?<span class="required-field">*</span>
+                        </p>
+                        <div class="radio-group">
+                            <input required type="radio" name="garage" id="garageyes" value="Casa">
+                            <label for="garageyes">Sim</label>
+                            <input required type="radio" name="garage" id="garageno" value="Apartamento">
+                            <label for="garageno">Não</label>
+                    </div>
+                    <div class="box-input">
+                        <label for="garage">No caso de sim, para quantos carros?</label>
+                        <input type="number"
+                        name="garage"
+                        id="garage"
+                        class="block"
+                        placeholder="Número de vagas na garagem">
+                    </div>
+                    <div class="box-input">
+                        <label for="badrooms">Quantos quartos possui o imóvel?</label>
+                        <input type="number"
+                        placeholder="Número de quartos"
+                        name="bedrooms"
+                        id="bedrooms"
+                        class="block">
+                    </div>
+                    <div class="box-input">
+                        <label for="bathrooms">Quantos banheiros possui o imóvel?</label>
+                        <input type="number"
+                        placeholder="Número de banheiros"
+                        name="bathrooms"
+                        id="bathrooms"
+                        class="block">
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            O imóvel possui sistema de segurança?<span class="required-field">*</span>
+                        </p>
+                        <input required type="radio" name="security" id="securityyes" value="Casa">
+                        <label for="securityyes">Sim</label>
+                        <input required type="radio" name="security" id="securityno" value="Apartamento">
+                        <label for="securityno">Não</label>
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            O imóvel é mobilhado?<span class="required-field">*</span>
+                        </p>
+                        <input required type="radio" name="forniture" id="fornitureyes" value="Casa">
+                        <label for="fornitureyes">Sim</label>
+                        <input required type="radio" name="forniture" id="fornitureno" value="Apartamento">
+                        <label for="fornitureno">Não</label>
+                    <div class="box-input">
+                        <label for="image">Imagem do imóvel</label>
+                        <input type="file" 
+                        multiple
+                        name="image" 
+                        id="image" 
+                        class="block" 
+                        accept="image/png, image/jpeg, image/jpg">
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                    <p class="required-field">* Campos obrigatórios</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
